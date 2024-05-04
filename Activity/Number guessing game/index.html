@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Guessing Game</title>
+<style>
+
+</style>
+</head>
+<body>
+<h1>Number Guessing Game</h1>
+<p>Guess a number between 1 and 10:</p>
+<input type="text" id="display">
+<button onclick="output()">Enter</button>
+<p id="output"></p>
+
+<script>
+    let randomNumber = Math.floor(Math.random() * 10) + 1;
+    let attempts = 0;
+
+    function output() {
+        let guess = parseInt(document.getElementById('display').value);
+        let output = document.getElementById('output');
+
+        if (isNaN(guess) || guess < 1 || guess > 10) {
+            output.textContent = "Invalid input: Please input a number between 1 and 10.";
+            return;
+        }
+
+        attempts++;
+
+        if (guess === randomNumber) {
+            output.textContent = `Correct number (${randomNumber}) in ${attempts} attempts.`;
+        } else if (guess < randomNumber) {
+            output.textContent = "Too low! Try again.";
+        } else {
+            output.textContent = "Too high! Try again.";
+        }
+    }
+</script>
+</body>
+</html>

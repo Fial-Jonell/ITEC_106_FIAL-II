@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+   
+    <div id="calculator">
+        <center>
+         <input id="output" readonly>
+        </center>
+        <div id="keys">
+            
+            <button onclick="clears()" class="left">C</button>
+            <button onclick="calculatePercentage()" class="left">%</button>
+            <button onclick="inputFraction()" class="left">½</button>
+            <button onclick="backspace()" class="left">←</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('+')" class="left">+</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('-')" class="left">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('*')" class="left">*</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="total()">=</button>
+            <button onclick="display('/')" class="left">/</button>
+           
+
+           
+        </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body{
+    
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    border-radius:40px;
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow: 1px 3px 25px 0px #000000;
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    
+}
+
+#output{
+    margin: 20px;
+    height: 50px;
+    width: 77%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: right;
+    border: none;
+    background-color: antiquewhite;
+    box-shadow: 0px 6px 15px 0px #000000;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    
+    padding: 25px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border: none;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 10px solid #000000;
+    }
+
+.left{
+    background: chocolate;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 10px solid #000000;
+}
+
+.hide{
+    opacity: 0;
+}
